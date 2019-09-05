@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatList">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g0"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g1"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g2"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g3"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g4"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g5"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g6"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g7"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g8"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/homeImageView"
+        android:src="@drawable/homeinactive"
+        app:layout_constraintTop_toBottomOf="@+id/g2"
+        app:layout_constraintBottom_toTopOf="@id/g1"
+        app:layout_constraintStart_toEndOf="@id/g8"
+        app:layout_constraintEnd_toStartOf="@id/g3"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <ImageView
+        android:id="@+id/chatImageView"
+        android:src="@drawable/chatactive"
+        app:layout_constraintTop_toBottomOf="@+id/g2"
+        app:layout_constraintBottom_toTopOf="@id/g1"
+        app:layout_constraintStart_toEndOf="@id/g4"
+        app:layout_constraintEnd_toStartOf="@id/g5"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:src="@drawable/profileinactive"
+        app:layout_constraintTop_toBottomOf="@+id/g2"
+        app:layout_constraintBottom_toTopOf="@id/g1"
+        app:layout_constraintStart_toEndOf="@id/g6"
+        app:layout_constraintEnd_toStartOf="@id/g7"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <ListView
+        android:id="@+id/chatListView"
+        app:layout_constraintTop_toBottomOf="@+id/g0"
+        app:layout_constraintBottom_toTopOf="@id/g2"
+        app:layout_constraintStart_toEndOf="@id/g8"
+        app:layout_constraintEnd_toStartOf="@id/g7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
